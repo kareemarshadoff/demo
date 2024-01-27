@@ -1,0 +1,109 @@
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #3498db; /* Change this color to your desired navbar color */
+    padding-top: 60px;
+    transition: 0.3s;
+  }
+  
+  .sidebar-open .sidebar {
+    left: 0;
+  }
+  
+  .sidebar-toggle {
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+  }
+  
+  .bar {
+    width: 35px;
+    height: 5px;
+    background-color: #715d5d;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .sidebar-open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .sidebar-open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .sidebar-open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .sidebar a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color */
+  }
+  
+ .sidebar nav {
+  padding-left: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar p{
+  padding-left: 5px;
+}
+
+
+.sidebar nav a {
+  color: white;
+  /* Add your additional styling for links within the list if needed */
+  display: block; /* Ensure the links take up the full width of the container */
+  padding: 10px 0; /* Add padding to the links for better spacing */
+  transition: color 0.3s;
+}
+
+.sidebar nav a:hover {
+  color: #ec7063;
+}
+
+.logout {
+  padding: 10px 20px; /* Adjust padding for better spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logout span {
+  color: white;
+  /* Add any additional styling for the "Logout" text if needed */
+}
+
+.logout-symbol {
+  font-size: 20px; /* Adjust the font size of the symbol */
+  /* Add any additional styling for the symbol if needed */
+}
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3498db; /* Dropdown background color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 150ox;
+    padding: 5px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

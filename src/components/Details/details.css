@@ -1,0 +1,62 @@
+/* Add these styles to your CSS file or component style */
+body{
+  background: linear-gradient(to right,#1BA098 10%,#a6eee9) no-repeat;
+}
+.detail-content {
+  margin: 2rem;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.details-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 30em;
+  height: 30em;
+  background-color: #f8f8f8;
+  animation: fadeInUp 0.5s ease-out 0.2s;
+  margin-top: 55px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
+
+strong {
+  margin-right: 0.5rem;
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Add some additional styling to highlight certain elements */
+
+.list-item strong {
+  color: #007bff; /* Blue color for strong elements */
+}
+
+.list-item:last-child {
+  margin-bottom: 0; /* Remove margin for the last list item */
+}
+
+/* Adjust styles based on your design preferences */
